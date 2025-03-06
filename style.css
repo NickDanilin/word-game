@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none; /* чтобы не выделять текст при перетаскивании */
+}
+
+body {
+    font-family: sans-serif;
+    background: #f0f0f0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Контейнер для слов */
+#game-container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    background: #fff;
+    border: 2px solid #333;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+/* Карточки */
+.word-card {
+    position: absolute;
+    display: inline-block;
+    padding: 5px 8px;
+    background-color: #ffeeaa;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    cursor: move;
+}
+
+/* Кнопка "Restart" */
+#restart-btn {
+    padding: 8px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Звёздочка */
+.star-polygon {
+    fill: gold;
+}
+
+#orbit-path {
+    fill: none;
+    stroke-dasharray: 5 5;
+}
+
